@@ -16,12 +16,13 @@ app.on('ready', () => {
     minWidth: 380,
     minHeight: 360,
     backgroundColor: '#000',
+    fullscreen: true,
     icon: path.join(__dirname, { darwin: 'icon.icns', linux: 'icon.png', win32: 'icon.ico' }[process.platform] || 'icon.ico'),
     resizable: true,
     frame: process.platform !== 'darwin',
     skipTaskbar: process.platform === 'darwin',
     autoHideMenuBar: process.platform === 'darwin',
-    webPreferences: { zoomFactor: 1.0, nodeIntegration: true, backgroundThrottling: false }
+    webPreferences: { zoomFactor: 1.0, nodeIntegration: true, backgroundThrottling: false, sandbox:false }
   })
 
   app.win.loadURL(`file://${__dirname}/sources/index.html`)
@@ -33,8 +34,9 @@ app.on('ready', () => {
 
   app.win.on('hide', function () {
     isShown = false
-  })
-
+  }
+  )
+  
   app.win.on('show', function () {
     isShown = true
   })
@@ -50,6 +52,7 @@ app.on('ready', () => {
       app.win.show()
     }
   })
+  //app.allowRendererProcessReuse = true
 })
 
 app.inspect = function () {
