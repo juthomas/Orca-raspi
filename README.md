@@ -202,3 +202,9 @@ The midi operator interprets any letter above the chromatic scale as a transpose
 - Support this project through [Patreon](https://patreon.com/100).
 - See the [License](LICENSE.md) file for license rights and limitations (MIT).
 - Pull Requests are welcome!
+
+## Install on raspberry-pi
+`cd ./desktop`
+`sudo apt-get install npm`
+`npm install`
+`npm start`
