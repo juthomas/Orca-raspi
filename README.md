@@ -208,3 +208,17 @@ The midi operator interprets any letter above the chromatic scale as a transpose
 `sudo apt-get install npm`
 `npm install`
 `npm start`
+
+## Create autostart on Raspi
+`sudo nano /etc/xdg/autostart/orca.desktop`
+```
+[Desktop Entry]
+Name=ORCA
+Comment=ORCA Modified via npm
+Icon=/usr/share/pixmaps/openbox.xpm
+Exec=lxterminal -t "Orca" --working-directory=/home/ddos/Documents/Orca-raspi/desktop -e "npm start"
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None
+```
