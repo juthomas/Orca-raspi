@@ -215,7 +215,6 @@ The midi operator interprets any letter above the chromatic scale as a transpose
 [Desktop Entry]
 Name=ORCA
 Comment=ORCA Modified via npm
-Icon=/usr/share/pixmaps/openbox.xpm
 Exec=lxterminal -t "Orca" --working-directory=/home/ddos/Documents/Orca-raspi/desktop -e "npm start"
 Type=Application
 Encoding=UTF-8
