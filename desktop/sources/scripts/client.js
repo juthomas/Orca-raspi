@@ -11,6 +11,8 @@
 /* global Clock */
 /* global Theme */
 
+const fs = require('fs');
+
 function Client () {
   this.version = 178
   this.library = library
@@ -139,8 +141,12 @@ function Client () {
     this.modZoom()
     this.update()
     this.el.className = 'ready'
+    const fileContent = fs.readFileSync('../default.orca', 'utf8');
+    this.source.store({name:'../default.orca'}, fileContent);
+    this.whenOpen(null, fileContent);
+    // this.toggleGuide()
 
-    this.toggleGuide()
+
   }
 
   this.reset = () => {
