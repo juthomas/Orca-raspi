@@ -12,6 +12,7 @@ cd "$USER_HOME/Documents/Orca-raspi/desktop" || exit
 
 # Set Wallpaper
 pcmanfm --set-wallpaper="$USER_HOME/Documents/Orca-raspi/NSDOS-DDOS-NIAKABI-Wallpaper.png"
+pcmanfm --wallpaper-mode=screen
 
 # Install
 npm install
