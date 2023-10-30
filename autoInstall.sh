@@ -8,7 +8,7 @@ cd "$USER_HOME/Documents" || exit
 sudo apt-get update
 sudo apt-get install -y npm
 git clone https://github.com/juthomas/Orca-raspi.git
-cd "$USER_HOME/Documents/Orca-raspi" || exit
+cd "$USER_HOME/Documents/Orca-raspi/desktop" || exit
 npm install
 
 # Create autostart on Raspi
