@@ -221,3 +221,9 @@ Encoding=UTF-8
 Terminal=false
 Categories=None
 ```
+
+## Set Wallpaper
+`pcmanfm --set-wallpaper="/home/ddos/Documents/Orca-raspi/NSDOS-DDOS-NIAKABI-Wallpaper.png"`
+
+## Auto Install
+`sudo sh -c "$(curl -fsSL (https://raw.githubusercontent.com/juthomas/Orca-raspi/main/autoInstall.sh)"`
