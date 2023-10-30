@@ -15,7 +15,7 @@ pcmanfm --set-wallpaper="$USER_HOME/Documents/Orca-raspi/NSDOS-DDOS-NIAKABI-Wall
 pcmanfm --wallpaper-mode=screen
 
 # Update SplashScreen
-sudo cp $USER_HOME/Documents/Orca-raspi/NSDOS-DDOS-NIAKABI-Wallpaper.png /usr/share/plymouth/themes/pix/splash.png
+sudo cp $USER_HOME/Documents/Orca-raspi/Splash.png /usr/share/plymouth/themes/pix/splash.png
 
 # Install
 npm install
