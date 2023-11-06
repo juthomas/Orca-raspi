@@ -48,7 +48,7 @@ Exec=lxterminal -t \"Orca\" --working-directory=$USER_HOME/Documents/Orca-raspi/
 Type=Application
 Encoding=UTF-8
 Terminal=false
-Categories=None" | sudo tee $USER_HOME/Desktop/orca.desktop > /dev/null
+Categories=None" | sudo tee $USER_HOME/Desktop/orcaUpdater.desktop > /dev/null
 
 
 # Start the program
