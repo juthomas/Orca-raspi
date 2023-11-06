@@ -22,6 +22,8 @@ rm -rf $USER_HOME/Documents/Orca-raspi
 # sudo apt-get autoremove -y
 
 # Reset wallpaper to default or remove the setting (commented out, optional)
-# pcmanfm --set-wallpaper="/usr/share/raspberrypi-artwork/raspberry-pi-logo.png"
+pcmanfm --wallpaper-mode=center
+pcmanfm --set-wallpaper="/usr/share/raspberrypi-artwork/raspberry-pi-logo.png"
 
+  
 echo "Orca Uninstallation completed."
