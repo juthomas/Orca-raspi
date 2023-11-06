@@ -225,5 +225,8 @@ Categories=None
 ## Set Wallpaper
 `pcmanfm --set-wallpaper="/home/ddos/Documents/Orca-raspi/NSDOS-DDOS-NIAKABI-Wallpaper.png"`
 
+## Uninstall
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/juthomas/Orca-raspi/main/autoUninstall.sh)"`
+
 ## Auto Install
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/juthomas/Orca-raspi/main/autoInstall.sh)"`
