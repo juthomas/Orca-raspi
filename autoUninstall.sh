@@ -7,14 +7,14 @@ USER_HOME="$HOME"
 #pkill -f 'npm start' # This will kill all processes that have 'npm start' in their command
 
 # Remove autostart entry
-sudo rm /etc/xdg/autostart/orca.desktop
+#sudo rm /etc/xdg/autostart/orca.desktop
 
 # Remove desktop shortcuts
-rm "$USER_HOME/Desktop/orca.desktop"
-rm "$USER_HOME/Desktop/orcaUpdater.desktop"
+#rm "$USER_HOME/Desktop/orca.desktop"
+#rm "$USER_HOME/Desktop/orcaUpdater.desktop"
 
 # Remove the cloned repository and its contents
-rm -rf "$USER_HOME/Documents/Orca-raspi"
+#rm -rf "$USER_HOME/Documents/Orca-raspi"
 
 # Remove npm if it was not previously installed
 # Caution: This might remove dependencies for other applications
