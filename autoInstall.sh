@@ -19,13 +19,25 @@ npm install
 
 # Create autostart on Raspi
 echo "[Desktop Entry]
-Name=ORCA
-Comment=ORCA Modified via npm
+Name=Orca Raspi
+Comment=ORCA Modified for DDOS
+Icon=$USER_HOME/Documents/Orca-raspi/desktop/icon.svg
 Exec=lxterminal -t \"Orca\" --working-directory=$USER_HOME/Documents/Orca-raspi/desktop -e \"npm start\"
 Type=Application
 Encoding=UTF-8
 Terminal=false
 Categories=None" | sudo tee /etc/xdg/autostart/orca.desktop > /dev/null
+
+# Create Shortcut on desktop
+echo "[Desktop Entry]
+Name=Orca Raspi
+Comment=ORCA Modified for DDOS
+Icon=$USER_HOME/Documents/Orca-raspi/desktop/icon.svg
+Exec=lxterminal -t \"Orca\" --working-directory=$USER_HOME/Documents/Orca-raspi/desktop -e \"npm start\"
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None" | sudo tee $USER_HOME/Desktop/orca.desktop > /dev/null
 
 
 # Start the program
