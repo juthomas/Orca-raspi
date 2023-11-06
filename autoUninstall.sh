@@ -4,7 +4,7 @@
 USER_HOME="$HOME"
 
 # Stop any running instance of the application
-pkill -f 'npm start' # This will kill all processes that have 'npm start' in their command
+# pkill -f 'npm start' # This will kill all processes that have 'npm start' in their command
 
 # Remove autostart entry
 sudo rm -f /etc/xdg/autostart/orca.desktop
