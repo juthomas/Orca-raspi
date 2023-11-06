@@ -41,7 +41,7 @@ Categories=None" | sudo tee $USER_HOME/Desktop/orca.desktop > /dev/null
 
 # Create Shortcut for update on desktop
 echo "[Desktop Entry]
-Name=Orca Raspi Updater
+Name=Orca Updater
 Comment=Update ORCA Modified for DDOS
 Icon=$USER_HOME/Documents/Orca-raspi/desktop/icon.svg
 Exec=lxterminal -t \"Orca\" --working-directory=$USER_HOME/Documents/Orca-raspi/desktop -e \"git pull; sleep 3\"
