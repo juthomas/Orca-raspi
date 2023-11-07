@@ -203,30 +203,13 @@ The midi operator interprets any letter above the chromatic scale as a transpose
 - See the [License](LICENSE.md) file for license rights and limitations (MIT).
 - Pull Requests are welcome!
 
-## Install on raspberry-pi
-`cd ./desktop`
-`sudo apt-get install npm`
-`npm install`
-`npm start`
+## On raspberry-pi
 
-## Create autostart on Raspi
-`sudo nano /etc/xdg/autostart/orca.desktop`
+#### Uninstall
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/juthomas/Orca-raspi/main/autoUninstall.sh)"
 ```
-[Desktop Entry]
-Name=ORCA
-Comment=ORCA Modified via npm
-Exec=lxterminal -t "Orca" --working-directory=/home/ddos/Documents/Orca-raspi/desktop -e "npm start"
-Type=Application
-Encoding=UTF-8
-Terminal=false
-Categories=None
+#### Install
+```shell
+ sh -c "$(curl -fsSL https://raw.githubusercontent.com/juthomas/Orca-raspi/main/autoInstall.sh)"
 ```
-
-## Set Wallpaper
-`pcmanfm --set-wallpaper="/home/ddos/Documents/Orca-raspi/NSDOS-DDOS-NIAKABI-Wallpaper.png"`
-
-## Uninstall
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/juthomas/Orca-raspi/main/autoUninstall.sh)"`
-
-## Auto Install
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/juthomas/Orca-raspi/main/autoInstall.sh)"`
