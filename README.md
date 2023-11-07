@@ -207,9 +207,9 @@ The midi operator interprets any letter above the chromatic scale as a transpose
 
 #### Uninstall
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/juthomas/Orca-raspi/main/autoUninstall.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/juthomas/Orca-raspi/main/uninstall.sh)"
 ```
 #### Install
 ```shell
- sh -c "$(curl -fsSL https://raw.githubusercontent.com/juthomas/Orca-raspi/main/autoInstall.sh)"
+ sh -c "$(curl -fsSL https://raw.githubusercontent.com/juthomas/Orca-raspi/main/install.sh)"
 ```
