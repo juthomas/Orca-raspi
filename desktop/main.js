@@ -22,7 +22,7 @@ app.on('ready', () => {
     frame: process.platform !== 'darwin',
     skipTaskbar: process.platform === 'darwin',
     autoHideMenuBar: process.platform === 'darwin',
-    webPreferences: { zoomFactor: 1.0, nodeIntegration: true, backgroundThrottling: false, sandbox:false }
+    webPreferences: { zoomFactor: 1.0, nodeIntegration: true, contextIsolation: false,backgroundThrottling: false, sandbox:false }
   })
 
   app.win.loadURL(`file://${__dirname}/sources/index.html`)
